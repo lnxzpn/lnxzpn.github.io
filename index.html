@@ -1,233 +1,288 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Linuxeros Zapopan 🐧</title>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-<script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              primary: "#007bc0",
-              secondary: "#0b0e24",
-              "background-light": "#f8fafc",
-              "background-dark": "#0b0e24",
-            },
-            fontFamily: {
-              sans: ["Inter", "sans-serif"],
-              mono: ["JetBrains Mono", "monospace"],
-            },
-            borderRadius: {
-              DEFAULT: "0.75rem",
-            },
+<html class="scroll-smooth dark" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Linuxeros Zapopan 🐧</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#007bc0",
+            secondary: "#0b0e24",
+            "background-light": "#f8fafc",
+            "background-dark": "#0b0e24",
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            mono: ["JetBrains Mono", "monospace"],
+          },
+          borderRadius: {
+            DEFAULT: "0.75rem",
           },
         },
-      };
-    </script>
-<style>
-        .gradient-mesh {
-            background-color: #0b0e24;
-            background-image: 
-                radial-gradient(at 0% 0%, hsla(201,100%,38%,0.15) 0px, transparent 50%),
-                radial-gradient(at 100% 100%, hsla(201,100%,38%,0.15) 0px, transparent 50%);
-        }
-    </style>
+      },
+    };
+  </script>
+  <style>
+    .gradient-mesh {
+      background-color: #0b0e24;
+      background-image:
+        radial-gradient(at 0% 0%, hsla(201, 100%, 38%, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, hsla(201, 100%, 38%, 0.15) 0px, transparent 50%);
+    }
+  </style>
 </head>
-<body class="font-sans antialiased text-slate-900 bg-background-light dark:bg-background-dark dark:text-slate-100 transition-colors duration-300">
-<nav class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-secondary/80 border-b border-slate-200 dark:border-slate-800">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex justify-between h-16 items-center">
-<div class="flex items-center gap-3">
-<img alt="Linuxeros Zapopan Logo" class="h-10 w-10 object-contain" src="https://raw.githubusercontent.com/lnxzpn/assets/refs/heads/main/logo/linuxeros%202.png"/>
-<span class="font-bold text-xl tracking-tight hidden sm:block">Linuxeros <span class="text-primary">Zapopan</span></span>
-</div>
-<div class="hidden md:flex items-center space-x-8">
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#activities">What We Do</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#events">Events</a>
-<a class="bg-primary hover:bg-sky-600 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all transform hover:scale-105" href="https://t.me/linuxeroszapopan">Join Community</a>
-</div>
-<button class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400" onclick="document.documentElement.classList.toggle('dark')">
-<span class="material-icons text-xl leading-none">dark_mode</span>
-</button>
-</div>
-</div>
-</nav>
-<header class="relative overflow-hidden py-20 lg:py-32 gradient-mesh">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-<div class="flex flex-col lg:flex-row items-center gap-12">
-<div class="flex-1 text-center lg:text-left">
-<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-6">
-<span class="relative flex h-2 w-2">
-<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-</span>
-                        Community-Driven
-                    </div>
-<h1 class="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight">
-                        Linuxeros <br/><span class="text-primary">Zapopan</span>
-</h1>
-<p class="text-lg lg:text-xl text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                        We are a Linux users community 🐧. We share knowledge about Free Software and Open Source to empower the tech ecosystem in Mexico.
-                    </p>
-<div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
-<a class="w-full sm:w-auto text-center px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg hover:shadow-lg hover:shadow-primary/30 transition-all" href="#activities">Explore our work</a>
-<a class="w-full sm:w-auto text-center px-8 py-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl font-bold text-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-all flex items-center justify-center gap-2" href="https://t.me/linuxeroszapopan">
-<span class="material-icons">send</span> Join Telegram
-                        </a>
-</div>
-</div>
-<div class="flex-1 relative">
-<div class="absolute inset-0 bg-primary/20 blur-[100px] rounded-full"></div>
-<img alt="Linuxeros Logo Large" class="relative z-10 w-full max-w-[450px] mx-auto drop-shadow-2xl animate-float" src="https://raw.githubusercontent.com/lnxzpn/assets/refs/heads/main/logo/linuxeros%202.png" style="animation: float 6s ease-in-out infinite;"/>
-</div>
-</div>
-</div>
-</header>
-<style>
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0px); }
-        }
-    </style>
-<section class="py-12 bg-white dark:bg-secondary border-y border-slate-200 dark:border-slate-800">
-<div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-around gap-8">
-<div class="text-center">
-<div class="text-3xl font-bold text-primary mb-1">+300</div>
-<div class="text-sm text-slate-500 uppercase font-semibold">Members</div>
-</div>
-<div class="text-center">
-<div class="text-3xl font-bold text-primary mb-1">50+</div>
-<div class="text-sm text-slate-500 uppercase font-semibold">Workshops</div>
-</div>
-<div class="text-center">
-<div class="text-3xl font-bold text-primary mb-1">100%</div>
-<div class="text-sm text-slate-500 uppercase font-semibold">Open Source</div>
-</div>
-<div class="text-center">
-<div class="text-3xl font-bold text-primary mb-1">Monthly</div>
-<div class="text-sm text-slate-500 uppercase font-semibold">Meetups</div>
-</div>
-</div>
-</section>
-<section class="py-24 bg-background-light dark:bg-background-dark" id="activities">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-16">
-<h2 class="text-3xl md:text-4xl font-bold mb-4">What We Do</h2>
-<div class="h-1.5 w-20 bg-primary mx-auto rounded-full mb-6"></div>
-<p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-                    Our community is dedicated to fostering growth and collaboration through various technical and social initiatives.
-                </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="group bg-white dark:bg-slate-800/50 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-all hover:shadow-xl">
-<div class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-icons text-3xl">groups</span>
-</div>
-<h3 class="text-xl font-bold mb-3">Kubernetes Community Days</h3>
-<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                        Active participation in global initiatives like Kubernetes Community Days, bringing cloud-native expertise to Zapopan.
-                    </p>
-<a class="inline-flex items-center text-primary font-semibold hover:gap-2 transition-all" href="https://community.cncf.io/events/details/cncf-kcd-guadalajara-presents-kcd-guadalajara-2026/cohost-kcd-guadalajara/">Learn more <span class="material-icons text-sm ml-1">arrow_forward</span></a>
-</div>
-<div class="group bg-white dark:bg-slate-800/50 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-all hover:shadow-xl">
-<div class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-icons text-3xl">terminal</span>
-</div>
-<h3 class="text-xl font-bold mb-3">Technical Workshops</h3>
-<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                        Hands-on sessions covering everything from basic Linux terminal usage to advanced server orchestration and DevOps.
-                    </p>
-<a class="inline-flex items-center text-primary font-semibold hover:gap-2 transition-all" href="https://www.youtube.com/@LinuxerosZapopan">View schedule <span class="material-icons text-sm ml-1">arrow_forward</span></a>
-</div>
-<div class="group bg-white dark:bg-slate-800/50 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-all hover:shadow-xl">
-<div class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-icons text-3xl">share</span>
-</div>
-<h3 class="text-xl font-bold mb-3">OSS Contribution</h3>
-<p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                        We encourage and guide members to contribute back to the projects they use, from bug reporting to code PRs.
-                    </p>
-<a class="inline-flex items-center text-primary font-semibold hover:gap-2 transition-all" href="https://github.com/lnxzpn">Contribute <span class="material-icons text-sm ml-1">arrow_forward</span></a>
-</div>
-</div>
-</div>
-</section>
-<section class="py-20 bg-primary">
-<div class="max-w-5xl mx-auto px-4 text-center">
-<h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Ready to join the rebellion?</h2>
-<p class="text-sky-100 text-lg mb-10 max-w-2xl mx-auto">
-                Whether you're a seasoned kernel hacker or just curious about what's inside the terminal, there's a place for you here.
-            </p>
-<div class="flex flex-wrap justify-center gap-4">
-<a class="bg-white text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors shadow-lg" href="https://t.me/linuxeroszapopan">Join Our Telegram</a>
-<a class="bg-secondary text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-black transition-colors shadow-lg flex items-center gap-2" href="https://github.com/lnxzpn">
-<img alt="Github" class="w-6 h-6 invert" src="https://icon.icepanel.io/Technology/png-shadow-512/GitHub.png"/>
-                    GitHub
-                </a>
-</div>
-</div>
-</section>
-<footer class="bg-secondary text-white py-16">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-<div class="col-span-1 md:col-span-2">
-<div class="flex items-center gap-3 mb-6">
-<img alt="Footer Logo" class="h-12 w-12" src="https://raw.githubusercontent.com/lnxzpn/assets/refs/heads/main/logo/linuxeros%202.png"/>
-<span class="text-2xl font-bold">Linuxeros Zapopan</span>
-</div>
-<p class="text-slate-400 max-w-md mb-8">
-                        Just For Fun, in the Guadalajara metropolitan area. Dedicated to spreading the freedom of software.
-                    </p>
-<div class="flex gap-4">
-<a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors" href="https://x.com/lnxzpn">
-<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
-</a>
-<a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors" href="https://www.youtube.com/@LinuxerosZapopan">
-<span class="material-icons text-xl">play_circle</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors" href="https://instagram.com/lnxzpn">
-<span class="material-icons text-xl">camera_alt</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors" href="https://linkedin.com/company/lnxzpn">
-<span class="material-icons text-xl">business</span>
-</a>
-</div>
-</div>
-<div>
-<h4 class="font-bold text-lg mb-6">Quick Links</h4>
-<ul class="space-y-4 text-slate-400">
-<li><a class="hover:text-primary transition-colors" href="#">Community Code</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Documentation</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold text-lg mb-6">Contact</h4>
-<ul class="space-y-4 text-slate-400">
-<li class="flex items-start gap-3">
-<span class="material-icons text-primary text-sm mt-1">location_on</span>
-                            Zapopan, Jalisco, México
-                        </li>
-<li class="flex items-start gap-3">
-<span class="material-icons text-primary text-sm mt-1">mail</span>
-                            staff@linuxeroszapopan.org
-                        </li>
-<li class="flex items-start gap-3">
-<span class="material-icons text-primary text-sm mt-1">public</span>
-                            linuxeroszapopan.org
-                        </li>
-</ul>
-</div>
-</div>
-<div class="pt-12 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-500 text-sm">
-<p>© 2019 - 2026 Linuxeros Zapopan. Made with 🐧 &amp; ❤️ in Mexico.</p>
-</div>
-</div>
-</footer>
 
-</body></html>
+<body
+  class="font-sans antialiased text-slate-900 bg-background-light dark:bg-background-dark dark:text-slate-100 transition-colors duration-300">
+  <nav
+    class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-secondary/80 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <div class="flex items-center gap-3">
+          <img alt="Linuxeros Zapopan Logo" class="h-10 w-10 object-contain"
+            src="https://raw.githubusercontent.com/lnxzpn/assets/refs/heads/main/logo/linuxeros%202.png" />
+          <span class="font-bold text-xl tracking-tight hidden sm:block">Linuxeros <span
+              class="text-primary">Zapopan</span></span>
+        </div>
+        <div class="hidden md:flex items-center space-x-8">
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="#about">About</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="#activities">What We Do</a>
+          <a class="text-sm font-medium hover:text-primary transition-colors" href="#events">Events</a>
+          <a class="bg-primary hover:bg-sky-600 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all transform hover:scale-105"
+            href="https://t.me/linuxeroszapopan">Join Community</a>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <header class="relative overflow-hidden py-20 lg:py-32 gradient-mesh">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="flex flex-col lg:flex-row items-center gap-12">
+        <div class="flex-1 text-center lg:text-left">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-6">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+            </span>
+            Community-Driven
+          </div>
+          <h1 class="text-5xl lg:text-7xl font-extrabold mb-6 leading-tight">
+            Linuxeros <br /><span class="text-primary">Zapopan</span>
+          </h1>
+          <p
+            class="text-lg lg:text-xl text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            We are a Linux users community 🐧. We share knowledge about Free Software and Open Source to empower the
+            tech ecosystem in Mexico.
+          </p>
+          <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+            <a class="w-full sm:w-auto text-center px-8 py-4 bg-primary text-white rounded-xl font-bold text-lg hover:shadow-lg hover:shadow-primary/30 transition-all"
+              href="#activities">Explore our work</a>
+            <a class="w-full sm:w-auto text-center px-8 py-4 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl font-bold text-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-all flex items-center justify-center gap-2"
+              href="https://t.me/linuxeroszapopan">
+              <span class="material-icons">send</span> Join Telegram
+            </a>
+          </div>
+        </div>
+        <div class="flex-1 relative">
+          <div class="absolute inset-0 bg-primary/20 blur-[100px] rounded-full"></div>
+          <img alt="Linuxeros Logo Large"
+            class="relative z-10 w-full max-w-[450px] mx-auto drop-shadow-2xl animate-float"
+            src="https://raw.githubusercontent.com/lnxzpn/assets/refs/heads/main/logo/linuxeros%202.png"
+            style="animation: float 6s ease-in-out infinite;" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <style>
+    @keyframes float {
+      0% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-20px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
+    }
+  </style>
+  <section class="py-12 bg-white dark:bg-secondary border-y border-slate-200 dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-around gap-8">
+      <div class="text-center">
+        <div class="text-3xl font-bold text-primary mb-1">+300</div>
+        <div class="text-sm text-slate-500 uppercase font-semibold">Members</div>
+      </div>
+      <div class="text-center">
+        <div class="text-3xl font-bold text-primary mb-1">50+</div>
+        <div class="text-sm text-slate-500 uppercase font-semibold">Workshops</div>
+      </div>
+      <div class="text-center">
+        <div class="text-3xl font-bold text-primary mb-1">100%</div>
+        <div class="text-sm text-slate-500 uppercase font-semibold">Open Source</div>
+      </div>
+      <div class="text-center">
+        <div class="text-3xl font-bold text-primary mb-1">Monthly</div>
+        <div class="text-sm text-slate-500 uppercase font-semibold">Meetups</div>
+      </div>
+    </div>
+  </section>
+  <section class="py-24 bg-background-light dark:bg-background-dark" id="activities">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">What We Do</h2>
+        <div class="h-1.5 w-20 bg-primary mx-auto rounded-full mb-6"></div>
+        <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          Our community is dedicated to fostering growth and collaboration through various technical and social
+          initiatives.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div
+          class="group bg-white dark:bg-slate-800/50 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-all hover:shadow-xl">
+          <div
+            class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+            <span class="material-icons text-3xl">groups</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Kubernetes Community Days</h3>
+          <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+            Active participation in global initiatives like Kubernetes Community Days, bringing cloud-native expertise
+            to Zapopan.
+          </p>
+          <a class="inline-flex items-center text-primary font-semibold hover:gap-2 transition-all"
+            href="https://community.cncf.io/events/details/cncf-kcd-guadalajara-presents-kcd-guadalajara-2026/cohost-kcd-guadalajara/">Learn
+            more <span class="material-icons text-sm ml-1">arrow_forward</span></a>
+        </div>
+        <div
+          class="group bg-white dark:bg-slate-800/50 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-all hover:shadow-xl">
+          <div
+            class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+            <span class="material-icons text-3xl">terminal</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Technical Workshops</h3>
+          <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+            Hands-on sessions covering everything from basic Linux terminal usage to advanced server orchestration and
+            DevOps.
+          </p>
+          <a class="inline-flex items-center text-primary font-semibold hover:gap-2 transition-all"
+            href="https://www.youtube.com/@LinuxerosZapopan">View schedule <span
+              class="material-icons text-sm ml-1">arrow_forward</span></a>
+        </div>
+        <div
+          class="group bg-white dark:bg-slate-800/50 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary/50 transition-all hover:shadow-xl">
+          <div
+            class="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+            <span class="material-icons text-3xl">share</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">OSS Contribution</h3>
+          <p class="text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+            We encourage and guide members to contribute back to the projects they use, from bug reporting to code PRs.
+          </p>
+          <a class="inline-flex items-center text-primary font-semibold hover:gap-2 transition-all"
+            href="https://github.com/lnxzpn">Contribute <span
+              class="material-icons text-sm ml-1">arrow_forward</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-20 bg-primary">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Ready to join the rebellion?</h2>
+      <p class="text-sky-100 text-lg mb-10 max-w-2xl mx-auto">
+        Whether you're a seasoned kernel hacker or just curious about what's inside the terminal, there's a place for
+        you here.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a class="bg-white text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 transition-colors shadow-lg"
+          href="https://t.me/linuxeroszapopan">Join Our Telegram</a>
+        <a class="bg-secondary text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-black transition-colors shadow-lg flex items-center gap-2"
+          href="https://github.com/lnxzpn">
+          <img alt="Github" class="w-6 h-6 invert"
+            src="https://icon.icepanel.io/Technology/png-shadow-512/GitHub.png" />
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-secondary text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div class="col-span-1 md:col-span-2">
+          <div class="flex items-center gap-3 mb-6">
+            <img alt="Footer Logo" class="h-12 w-12"
+              src="https://raw.githubusercontent.com/lnxzpn/assets/refs/heads/main/logo/linuxeros%202.png" />
+            <span class="text-2xl font-bold">Linuxeros Zapopan</span>
+          </div>
+          <p class="text-slate-400 max-w-md mb-8">
+            Just For Fun, in the Guadalajara metropolitan area. Dedicated to spreading the freedom of software.
+          </p>
+          <div class="flex gap-4">
+            <a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
+              href="https://x.com/lnxzpn">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                </path>
+              </svg>
+            </a>
+            <a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
+              href="https://www.youtube.com/@LinuxerosZapopan">
+              <span class="material-icons text-xl">play_circle</span>
+            </a>
+            <a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
+              href="https://instagram.com/lnxzpn">
+              <span class="material-icons text-xl">camera_alt</span>
+            </a>
+            <a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-primary transition-colors"
+              href="https://linkedin.com/company/lnxzpn">
+              <span class="material-icons text-xl">business</span>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg mb-6">Quick Links</h4>
+          <ul class="space-y-4 text-slate-400">
+            <li><a class="hover:text-primary transition-colors" href="#">Community Code</a></li>
+            <li><a class="hover:text-primary transition-colors" href="#">Documentation</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg mb-6">Contact</h4>
+          <ul class="space-y-4 text-slate-400">
+            <li class="flex items-start gap-3">
+              <span class="material-icons text-primary text-sm mt-1">location_on</span>
+              Zapopan, Jalisco, México
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-icons text-primary text-sm mt-1">mail</span>
+              staff@linuxeroszapopan.org
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-icons text-primary text-sm mt-1">public</span>
+              linuxeroszapopan.org
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="pt-12 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-500 text-sm">
+        <p>© 2019 - 2026 Linuxeros Zapopan. Made with 🐧 &amp; ❤️ in Mexico.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
